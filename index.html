@@ -1,58 +1,308 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <title>我的第一个网页</title>
-  <style>
-    body {
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-<div style="
-      background-color:#f1f1f1;
-      padding: 40px;
-      margin: 0 auto;
-    ">
-  <p style="text-align: center;  border-radius: 25px 10px 10px 10px;">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex布局</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="../re/index.css" type="text/css" />
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="baiSe yinying">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center border;
+          border-bottom: 1px solidrgb(123, 100, 157);
+          font-size: 14px;
+          color: #666;
+        "
+        class="flex"
+      >
+        <img
+          src="../re/image/bilibilirenwu.jpg"
+          alt="1"
+          width="80px"
+          height="80px"
+        />
+        <div style="margin-left: 10px">睡觉真香</div>
+      </div>
+      <!-- 导航条 -->
+      <div class="flex1">
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >首页
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >笔记
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >手册
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >笔记
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >版本
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >博客
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >栏目
+          </a>
+        </div>
+        <div class="daoHang">
+          <a
+            class="fa fa-paper-plane-o"
+            style="font-size: 24px; color: rgb(191, 115, 58)"
+            href="https://www.midorg.com/"
+            >留言
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div style="height: 60px flex column" class="flex">
+        <!-- 头部栏左区（放置网站） -->
+        <div
+          style="
+            flex: 3;
+            align-items: center;
+            color: rgb(191, 115, 58);
+            font-size: 48px;
+          "
+          class="flex column mg8"
+        >
+          欢迎来到我的网站
+        </div>
+        <!-- 头部栏右区（搜索框） -->
+        <div style="flex: 1" class="flex column mg8">
+          <input type="search" name="search" />
+          <button class="button button2">搜索</button>
+        </div>
+      </div>
 
-  <img style="border-radius: 10px;" src ="../sleepTree/bilibilirenwu.jpg" alt = "树某" width="80px" height="80px">
-</p>
-</div>
-<div style="
-    font-size: 14px;
-    text-ailgn: center;
-    margin: 0 auto;
-">
-  <p style="text-align: center;">做为一个米粉，我对小米logo的变化</p>
-  <p style="text-align: center;">非常有必要在自己个人网页记录下</p>
-  <p style="text-align: center;">这个非常有意义的时刻</p>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex">
+            <!-- 数据块 -->
+            <div style="height: 100px" class="flex1 mgr8 yinying">
+              <img
+                class="flex"
+                src="../re/image/html5.jpg"
+                alt="css"
+                width="100px"
+              />
+            </div>
+            <div style="height: 100px" class="flex1 mgr8 yinying">
+              <img
+                class="flex"
+                src="../re/image/css.png"
+                alt="css"
+                width="100px"
+              />
+            </div>
+            <div style="height: 100px" class="flex1 mgr8 yinying">
+              <img
+                class="flex"
+                src="../re/image/js.png"
+                alt="css"
+                width="100px"
+              />
+            </div>
+            <div style="height: 100px" class="flex1 mgr8 yinying">
+              <img
+                style="height: 100px"
+                src="../re/image/java.png"
+                alt="java"
+                width="100px"
+              />
+            </div>
+            <div style="height: 100px" class="flex1 mgr8 yinying">
+              <img
+                style="height: 100px"
+                src="../re/image/mysql.png"
+                alt="mysql"
+                width="100px"
+              />
+            </div>
+            <div style="height: 100px" class="flex1 mgr8 yinying">
+              <i
+                class="fa fa-linux"
+                style="font-size: 100px; color: black flex"
+              ></i>
+            </div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div style="height: 160px" class="baiSe mrt8 yinying flex column">
+              <!-- 视频标题 -->
+              <div
+                style="
+                  height: 20px;
+                  color: rgb(191, 115, 58);
+                  justify-content: center;
+                "
+                class="flex"
+              >
+                <div>学习编程体会</div>
+              </div>
+              <!-- 视频内容 -->
+              <div class="flex" style="justify-content: center">
+                多实践，多总结
+              </div>
+            </div>
 
-  <p style="text-align: center;">对图片使用圆角，成功从雷总手里“骗走”两百万</p>
-  <p style="text-align: center">
-  <img style="border-radius: 10px;" src ="../sleepTree/xiaomilogo.jpg" alt = "雷某" width="180px" height="180px">
-  </p>
-  <p style="text-align: center;">图像出80万像素哪够?</p>
-  <p style="text-align: center;">我树某出180万像素，出的多，挣得也就越多!</p>
-
-
-
-
-</div>
-<div style="
-      background-color:#f1f1f1;
-      margin:0 auto;
-      padding: 40px;
-      font-size: 12px;
-
-">
-   <p style="text-align: center;">我的网站</p>
-  <p style="text-align: center;"> <a href ="www.midorg.com/">友情链接</a>
-  </p>
-
-</div>
-
+            <div style="height: 160px" class="baiSe mrt8 yinying flex column">
+              <!-- 编程标题 -->
+              <div
+                style="
+                  height: 20px;
+                  color: rgb(191, 115, 58);
+                  justify-content: center;
+                "
+                class="flex"
+              >
+                <div>编程刷题网站</div>
+              </div>
+              <!-- 编程 -->
+              <div
+                style="justify-content: space-between"
+                class="flex baiSe mgr8 yinying"
+              >
+                <div class="baiSe mgr8 yinying">
+                  <ul>
+                    <li>
+                      <a href="https://www.programmercarl.com/">代码随想录</a>
+                    </li>
+                    <li>
+                      <a href="https://www.programmercarl.com/">牛客网</a>
+                    </li>
+                    <li>
+                      <a href="https://www.programmercarl.com/">LeetCode</a>
+                    </li>
+                    <li>
+                      <a href="https://www.programmercarl.com/"
+                        >StackOverflow</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.programmercarl.com/"
+                        >StackOverflow</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="baiSe mgr8 yinying">
+                  <ul>
+                    <li>代码随想录</li>
+                    <li>牛客网</li>
+                    <li>哔哩哔哩</li>
+                    <li>元岛</li>
+                    <li>菜鸟教程</li>
+                  </ul>
+                </div>
+                <div class="flex baiSe mgr8 yinying">
+                  <ul>
+                    <li>代码随想录</li>
+                    <li>牛客网</li>
+                    <li>哔哩哔哩</li>
+                    <li>元岛</li>
+                    <li>菜鸟教程</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div style="height: 160px" class="baiSe mrt8 yinying">
+              <!-- 编程书籍 -->
+              <div>
+                <p style="text-align: center; color: rgb(191, 115, 58)">
+                  编程工具
+                </p>
+              </div>
+              <!-- 书籍图片简介 -->
+            </div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column">
+          <!-- 提示区 -->
+          <div style="height: 200px" class="baiSe mgr8 mrt8 yinying">
+            <img
+              src="../re/image1/cowBoy.png"
+              alt="星际牛仔"
+              height="200px"
+              width="350px"
+            />
+          </div>
+          <!-- 消息区 -->
+          <div style="height: 380px" class="baiSe mrt8 yinying">
+            <div>
+              <p style="text-align: center; color: rgb(191, 115, 58)">
+                bug记录与成长
+              </p>
+            </div>
+          </div>
+          <!-- 名片区 -->
+          <div style="height: 80px" class="baiSe mrt8 yinying flex">
+            <img
+              src="../re/image/weixin.png"
+              alt="睡觉真香"
+              width="80px"
+              height="80px"
+            />
+            微信号：TEN13101310
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
