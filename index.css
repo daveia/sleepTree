@@ -3,9 +3,9 @@
   height: 100vh;
   background-color: #eee;
 }
-* {
+/* * {
   border-bottom: 1px solid;
-}
+} */
 .flex {
   display: flex;
 }
