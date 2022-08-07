@@ -9,97 +9,47 @@
       rel="stylesheet"
       href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
     />
-    <link rel="stylesheet" href="../sleepTree/index.css" type="text/css" />
+    <link rel="stylesheet" href="../re/index.css" type="text/css"/>
+
   </head>
-  <body class="flex">
+
+  
     <!-- 侧边栏 -->
-    <div style="width: 200px; z-index: 2" class="baiSe yinying">
-      <!-- 头像栏 -->
-      <div
-        style="
-          padding: 10px;
-          align-items: center;
-          justify-content: center border;
-          border-bottom: 1px solidrgb(123, 100, 157);
-          font-size: 14px;
-          color: #666;
-        "
-        class="flex"
-      >
-        <img
-          src="../sleepTree/bilibilirenwu.png"
-          alt="1"
-          width="80px"
-          height="80px"
-        />
-        <div style="margin-left: 10px">睡觉真香</div>
+    <div style="width: 200px; z-index: 2" class="yinying">
+     
       </div>
       <!-- 导航条 -->
       <div class="flex1">
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >首页
+        <h2> <!-- 头像栏 -->
+          <div
+            style="
+              padding: 10px;
+              align-items: center;
+              justify-content: center border;
+              border-bottom: 1px solidrgb(123, 100, 157);
+              font-size: 14px;
+              color: #666;
+            "
+            class="flex"
+          >
+            <img id="tree"
+              src="../sleepTree/bilibilirenwu.png"
+              alt="1"
+              width="80px"
+              height="80px"
+            />
+            <div style="margin-left: 10px" class="font">睡觉真香</div></h2>
+      
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776; 菜单</span
+        >
+        <div class="search-box">
+          <input class="search-txt" type="text" placeholder="动态搜索框">
+          <a class="search-btn">
+              <svg class="icon" viewBox="0 0 1024 1024"><path d="M424.024 766.098c-91.619 0-177.754-35.679-242.538-100.464-133.735-133.737-133.735-351.344 0-485.078 64.784-64.784 150.919-100.462 242.538-100.462s177.754 35.677 242.539 100.462c133.733 133.735 133.735 351.34 0 485.078-64.785 64.783-150.922 100.464-242.539 100.464zM424.024 196.085c-60.637 0-117.643 23.613-160.523 66.489-88.512 88.51-88.51 232.53 0 321.040 42.876 42.876 99.885 66.491 160.523 66.491s117.643-23.614 160.523-66.491c88.51-88.51 88.51-232.53 0-321.040-42.876-42.876-99.885-66.489-160.523-66.489z" fill="#e94118" p-id="1176"></path><path d="M886.838 943.904c-14.842 0-29.684-5.663-41.010-16.986l-261.286-261.285c-22.647-22.649-22.647-59.369 0-82.018 22.647-22.647 59.37-22.647 82.018 0l261.286 261.286c22.647 22.649 22.647 59.369 0 82.018-11.325 11.322-26.167 16.985-41.010 16.985z" fill="#e94118" p-id="1177"></path></svg>
           </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >笔记
-          </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >手册
-          </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >笔记
-          </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >版本
-          </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >博客
-          </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >栏目
-          </a>
-        </div>
-        <div class="daoHang">
-          <a
-            class="fa fa-paper-plane-o"
-            style="font-size: 24px; color: rgb(191, 115, 58)"
-            href="https://www.midorg.com/"
-            >留言
-          </a>
-        </div>
+      </div>
+      
       </div>
     </div>
 
@@ -115,49 +65,44 @@
             color: rgb(191, 115, 58);
             font-size: 48px;
           "
-          class="flex column mg8"
+          class="flex column mg8 font"
         >
           欢迎来到我的网站
-        </div>
-        <!-- 头部栏右区（搜索框） -->
-        <div style="flex: 1" class="flex column mg8">
-          <input type="search" name="search" />
-          <button class="button button2">搜索</button>
         </div>
       </div>
 
       <!-- 内容区 -->
-      <div style="overflow: auto" class="flex1 flex">
+      <div class="flex1 flex">
         <!-- 左区 -->
         <div style="flex: 3" class="flex column mg8">
           <!-- 数据区 -->
           <div class="flex">
             <!-- 数据块 -->
-            <div style="height: 100px" class="flex1 mgr8 yinying">
+            <div style="height: 100px" class="flex1 mgr8 yinying baiSe">
               <img
                 class="flex"
-                src="../sleepTree/html5.jpg"
-                alt="html5"
-                width="100px"
-              />
-            </div>
-            <div style="height: 100px" class="flex1 mgr8 yinying">
-              <img
-                class="flex"
-                src="../sleepTree/css.png"
+                src="../sleepTree/html5.png"
                 alt="css"
                 width="100px"
               />
             </div>
-            <div style="height: 100px" class="flex1 mgr8 yinying">
+            <div style="height: 100px" class="flex1 mgr8 yinying baiSe">
               <img
                 class="flex"
-                src="../sleepTree/js.png"
+                src="../re/image/css.webp"
                 alt="css"
                 width="100px"
               />
             </div>
-            <div style="height: 100px" class="flex1 mgr8 yinying">
+            <div style="height: 100px" class="flex1 mgr8 yinying baiSe">
+              <img
+                class="flex"
+                src=".../sleepTree/js.png"
+                alt="css"
+                width="100px"
+              />
+            </div>
+            <div style="height: 100px" class="flex1 mgr8 yinying baiSe">
               <img
                 style="height: 100px"
                 src="../sleepTree/java.png"
@@ -165,7 +110,7 @@
                 width="100px"
               />
             </div>
-            <div style="height: 100px" class="flex1 mgr8 yinying">
+            <div style="height: 100px" class="flex1 mgr8 yinying baiSe">
               <img
                 style="height: 100px"
                 src="../sleepTree/mysql.png"
@@ -173,7 +118,7 @@
                 width="100px"
               />
             </div>
-            <div style="height: 100px" class="flex1 mgr8 yinying">
+            <div style="height: 100px" class="flex1 mgr8 yinying baiSe">
               <i
                 class="fa fa-linux"
                 style="font-size: 100px; color: black flex"
@@ -193,7 +138,7 @@
                 "
                 class="flex"
               >
-                <div>学习编程体会</div>
+                <div class="font">学习编程体会</div>
               </div>
               <!-- 视频内容 -->
               <div class="flex" style="justify-content: center">
@@ -218,7 +163,7 @@
                 style="justify-content: space-between"
                 class="flex baiSe mgr8 yinying"
               >
-                <div class="baiSe mgr8 yinying">
+                <div class="baiSe mgr8 yinying font">
                   <ul>
                     <li>
                       <a href="https://www.programmercarl.com/">代码随想录</a>
@@ -234,14 +179,9 @@
                         >StackOverflow</a
                       >
                     </li>
-                    <li>
-                      <a href="https://www.programmercarl.com/"
-                        >StackOverflow</a
-                      >
-                    </li>
                   </ul>
                 </div>
-                <div class="baiSe mgr8 yinying">
+                <div class="baiSe mgr8 yinying font">
                   <ul>
                     <li>代码随想录</li>
                     <li>牛客网</li>
@@ -250,7 +190,7 @@
                     <li>菜鸟教程</li>
                   </ul>
                 </div>
-                <div class="flex baiSe mgr8 yinying">
+                <div class="flex baiSe mgr8 yinying font">
                   <ul>
                     <li>代码随想录</li>
                     <li>牛客网</li>
@@ -264,7 +204,7 @@
             <div style="height: 160px" class="baiSe mrt8 yinying">
               <!-- 编程书籍 -->
               <div>
-                <p style="text-align: center; color: rgb(191, 115, 58)">
+                <p style="text-align: center; color: rgb(191, 115, 58) font">
                   编程工具
                 </p>
               </div>
@@ -277,7 +217,7 @@
           <!-- 提示区 -->
           <div style="height: 200px" class="baiSe mgr8 mrt8 yinying">
             <img
-              src="../sleepTree/cowBoy.png"
+              src="../sleepTree/cowBoy.webp"
               alt="星际牛仔"
               height="200px"
               width="200px"
@@ -286,7 +226,7 @@
           <!-- 消息区 -->
           <div style="height: 380px" class="baiSe mrt8 yinying">
             <div>
-              <p style="text-align: center; color: rgb(191, 115, 58)">
+              <p style="text-align: center; color: rgb(191, 115, 58) font">
                 bug记录与成长
               </p>
             </div>
@@ -294,7 +234,7 @@
           <!-- 名片区 -->
           <div style="height: 80px" class="baiSe mrt8 yinying flex">
             <img
-              src="../sleepTree/weixin.png"
+              src="../re/image/weixin.webp"
               alt="睡觉真香"
               width="80px"
               height="80px"
@@ -304,5 +244,23 @@
         </div>
       </div>
     </div>
+    <div id="mySidenav" class="sidenav">
+     style="height: 40px;"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a>
+      
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px"; //用对应的js代码控制侧边栏的宽度（展开）
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0px"; //用对应的js代码控制侧边栏的宽度（回收）
+      }
+      
+    </script>
   </body>
 </html>
